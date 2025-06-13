@@ -13,18 +13,18 @@ const AboutUs = () => {
   return (
     <AboutBox
       sx={{
-        py: { xs: 20, md: 12,sm:40 },
+        py: { xs: 20, md: 12, sm: 40 },
         pl: { xs: 5, md: 20 },
         pr: { xs: 5, md: 20 },
 
-        height:{lg:"600px",xs:'auto'}
+        height: { lg: "600px", xs: 'auto' }
       }}
     >
-      <Grid  container spacing={{lg:4,xs:0}} sx={{
- 
+      <Grid container spacing={{ lg: 4, xs: 0 }} sx={{
+
       }} alignItems="center">
         {/* Left Side - Images */}
-        <Grid size={{ xs: 12, lg: 6,sm:7 }}>
+        <Grid size={{ xs: 12, lg: 6, sm: 7 }}>
           <Box
             sx={{
               position: "relative",
@@ -32,67 +32,61 @@ const AboutUs = () => {
               maxWidth: 1000,
               height: { xs: 600, md: 650 },
               mx: "auto",
-              my: {lg:8},
+              my: { lg: 8 },
             }}
           >
             {/* Top Left Image */}
-            <Box
-              component="img"
+            <img
               src="/AboutUsImage1.svg" // replace with actual image path
               alt="Top Left"
               sx={{
                 position: "absolute",
-                top: {md:80,xs:-113,sm:-240},
-                left: {md:50,xs:-10,sm:20},
-                width: { xs: "70%", md: "35%",sm:"100%" },
+                top: { md: 80, xs: -113, sm: -240 },
+                left: { md: 50, xs: -10, sm: 20 },
+                width: { xs: "70%", md: "35%", sm: "100%" },
                 borderRadius: 2,
                 objectFit: "cover",
-                
+
               }}
             />
-
-            {/* Top Right Image */}
-            <Box
-              component="img"
+            <img
               src="/AboutUsImage2.svg"
               alt="Top Right"
               sx={{
                 position: "absolute",
-                top: {md:180,xs:-43,sm:-100},
-                right: {md:180,xs:-40,sm:-300},
-                width: { xs: "45%", md: "20%",sm:"58%" },
+                top: { md: 180, xs: -43, sm: -100 },
+                right: { md: 180, xs: -40, sm: -300 },
+                width: { xs: "45%", md: "20%", sm: "58%" },
                 borderRadius: 2,
                 objectFit: "cover",
-               
+
               }}
             />
 
             {/* Bottom Image */}
-            <Box
-              component="img"
+            <img
               src="/AboutUsImage3.svg"
               alt="Bottom Right"
               sx={{
                 position: "absolute",
-                bottom: {md:50,xs:220,sm:60},
-                right: {md:100,sm:-300},
-                width: { xs: "100%", md: "65%",sm:"100%" },
+                bottom: { md: 50, xs: 220, sm: 60 },
+                right: { md: 100, sm: -300 },
+                width: { xs: "100%", md: "65%", sm: "100%" },
                 borderRadius: 2,
                 objectFit: "cover",
-                
+
               }}
             />
 
             {/* Center Circle Content */}
-            <Box
-              component="img"
+            <img
               src="/AboutUsImage4.svg"
               sx={{
                 position: "absolute",
-                top: {md:"50%",xs:'20%',sm:"30%"},
-                left: {lg:"45%",xs:"50%",sm:"100%"},
+                top: { md: "50%", xs: '20%', sm: "30%" },
+                left: { lg: "45%", xs: "50%", sm: "100%" },
                 transform: "translate(-50%, -50%)",
-                width: { xs: 140, md: 180,sm:160 },
+                width: { xs: 140, md: 180, sm: 160 },
                 height: { xs: 140, md: 180 },
 
                 display: "flex",
@@ -104,12 +98,12 @@ const AboutUs = () => {
                 px: 2,
                 zIndex: 1,
               }}
-            ></Box>
+            />
           </Box>
         </Grid>
 
         {/* Right Side - Content */}
-        <Grid  size={{ xs: 12, lg: 6 }}>
+        <Grid size={{ xs: 12, lg: 6 }}>
           <Typography
             sx={{
               color: "#F28F53",
